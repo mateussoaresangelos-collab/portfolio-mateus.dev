@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateus Soares | Desenvolvedor Front-End</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <h2 class="logo">Mateus DEV<span></span></h2>
+
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#highlights">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <button id="themeToggle" aria-label="Alternar tema">☀</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Mateus Soares</h1>
+
+          <h3>Desenvolvedor <span class="highlight">Front-End</span></h3>
+
+          <p>
+            Criando experiências digitais modernas, responsivas e performáticas
+            com foco em design e usabilidade.
+          </p>
+
+          <div class="buttons">
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="#contato" class="btn-outline">Entrar em Contato</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="sobre reveal">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou desenvolvedor front-end focado em criar interfaces modernas e
+          funcionais utilizando HTML, CSS e JavaScript. Busco minha primeira
+          oportunidade para aplicar meus conhecimentos em projetos reais e
+          evoluir profissionalmente.
+        </p>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section id="highlights" class="reveal">
+        <h2>Habilidades</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Responsividade</div>
+          <div class="skill-card">Git</div>
+          <div class="skill-card">UI/UX Básico</div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" class="reveal">
+        <h2>Projetos</h2>
+
+        <div class="grid">
+          <div class="projeto-card">
+            <img
+              src="img/portfolio-preview.png"
+              alt="Preview do Projeto"
+              class="project-img"
+              loading="lazy"
+            />
+
+            <h3>Portfólio Pessoal</h3>
+
+            <p>Site responsivo desenvolvido com HTML, CSS e JavaScript.</p>
+
+            <div class="buttons">
+              <a href="#" target="_blank" class="btn">Ver Demo</a>
+              <a href="#" target="_blank" class="btn-outline">Código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="img/projeto2.png"
+              alt="Preview do Projeto"
+              class="project-img"
+              loading="lazy"
+            />
+
+            <h3>Projeto em Desenvolvimento</h3>
+
+            <p>Novos projetos serão adicionados em breve.</p>
+
+            <div class="buttons">
+              <a href="#" class="btn">Ver Demo</a>
+              <a href="#" class="btn-outline">Código</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="reveal">
+        <h2>Contato</h2>
+
+        <div class="contato-info">
+          <p>
+            <a href="mailto:mateussoaresangelos@gmail.com">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="https://github.com/mateussoaresangelos-collab"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="https://www.linkedin.com/in/mateus-soares-angelos-702082254"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Mateus Soares. Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="scrollTopBtn" aria-label="Voltar ao topo">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
