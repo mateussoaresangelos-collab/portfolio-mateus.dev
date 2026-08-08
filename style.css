@@ -269,8 +269,7 @@ body.light-mode .hero p{
 /* ================= CARDS ================= */
 
 .skills-grid,
-.grid,
-.projetos-container{
+.grid{
   display:flex;
   justify-content:center;
   gap:30px;
@@ -301,26 +300,35 @@ body.light-mode .skill-card{
   border:1px solid var(--surface-light-border);
 }
 
+/* ================ PROJETOS - CONTAINER (declaração única) ================ */
+.projetos-container{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:20px;
+}
+
 .projeto-card{
   background:var(--surface-dark);
   border:1px solid var(--surface-dark-border);
   width:320px;
-  padding:25px;
+  padding:20px;
   border-radius:15px;
   transition:.3s;
 }
 
 .projeto-card img{
   width:100%;
-  aspect-ratio:16/10;
+  height:180px;
   object-fit:cover;
   border-radius:10px;
   margin-bottom:15px;
 }
 
 .projeto-card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 18px 32px rgba(2,6,23,.35);
+  transform:translateY(-8px);
+  box-shadow:0 22px 40px rgba(2,6,23,.45);
 }
 
 body.light-mode .projeto-card{
@@ -335,6 +343,11 @@ body.light-mode .projeto-card{
 
 body.light-mode .projeto-card p{
   color:var(--text-light-muted);
+}
+
+.projeto-card .buttons{
+  justify-content:flex-start;
+  margin-top:10px;
 }
 
 /* ================= CONTACT ================= */
@@ -363,6 +376,27 @@ body.light-mode .projeto-card p{
   transition:.3s ease;
 }
 
+.contato-info a:hover{
+  transform:translateY(-3px);
+  border-color:rgba(59,130,246,.55);
+  background:var(--accent-strong);
+  color:#fff;
+}
+
+body.light-mode .contato-info a{
+  color:var(--text-light);
+  background:#fff;
+  border:1px solid var(--surface-light-border);
+}
+
+/* CORREÇÃO DO BUG: no hover, no light mode, o texto ficava branco sobre
+   fundo branco. Agora o fundo também muda para o accent no hover. */
+body.light-mode .contato-info a:hover{
+  color:#fff;
+  background:var(--accent-strong);
+  border-color:var(--accent-strong);
+}
+
 /* ================ PROJETOS E TAGS ================ */
 .projeto-desc{color:var(--text-dark-muted);margin:12px 0 18px;}
 .projeto-tech{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
@@ -377,39 +411,15 @@ body.light-mode .tag{background:rgba(37,99,235,.06);color:var(--accent-strong)}
 body.light-mode .stat-card{background:var(--surface-light);border:1px solid var(--surface-light-border)}
 
 /* ================ CERTIFICADOS ================ */
-.cert-main-card{display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--surface-dark);border:1px solid var(--surface-dark-border);padding:20px;border-radius:12px;margin-top:20px}
 .cert-info h3{margin-bottom:6px}
 .cert-meta{color:var(--text-dark-muted);font-size:.95rem;margin-bottom:8px}
 .cert-desc{color:var(--text-dark-muted);margin-bottom:12px}
 .cert-icon{font-size:48px}
-body.light-mode .cert-main-card{background:var(--surface-light);border:1px solid var(--surface-light-border)}
 
 /* CTA para acessar a página de certificados */
 .cert-cta{display:flex;justify-content:center;margin-top:20px}
 .cert-cta-card{background:var(--surface-dark);border:1px solid var(--surface-dark-border);padding:22px;border-radius:12px;max-width:760px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
 body.light-mode .cert-cta-card{background:var(--surface-light);border:1px solid var(--surface-light-border)}
-
-/* ================ PROJETOS - CONTAINER ================ */
-.projetos-container{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:20px}
-.projeto-card{width:320px;padding:20px}
-.projeto-card img{height:180px}
-.projeto-card .buttons{justify-content:flex-start;margin-top:10px}
-
-/* HOVER SUAVE */
-.projeto-card:hover{transform:translateY(-8px);box-shadow:0 22px 40px rgba(2,6,23,.45)}
-
-
-.contato-info a:hover{
-  transform:translateY(-3px);
-  border-color:rgba(59,130,246,.55);
-  color:#fff;
-}
-
-body.light-mode .contato-info a{
-  color:var(--text-light);
-  background:#fff;
-  border:1px solid var(--surface-light-border);
-}
 
 /* ================= ANIMATIONS ================= */
 
